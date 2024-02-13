@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f778e718-9c75-4e06-8fae-8f232972fb42" name="Changes" comment="Finished part 1 of the project" />
+    <list default="true" id="f778e718-9c75-4e06-8fae-8f232972fb42" name="Changes" comment="Added Javadocs?">
+      <change afterPath="$PROJECT_DIR$/src/Controller/AddPointController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/CompletePolygonController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/UpdateMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/PolygonDrawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/PolygonDrawer.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,11 +84,28 @@
       <option name="project" value="LOCAL" />
       <updated>1707502816035</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added Javadocs?">
+      <option name="closed" value="true" />
+      <created>1707502943585</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707502943585</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added Javadocs?">
+      <option name="closed" value="true" />
+      <created>1707503045447</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1707503045447</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Finished part 1 of the project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished part 1 of the project" />
+    <MESSAGE value="Added Javadocs?" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Javadocs?" />
   </component>
 </project>
