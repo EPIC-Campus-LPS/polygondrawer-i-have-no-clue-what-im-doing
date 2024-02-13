@@ -7,7 +7,7 @@ import java.util.Optional;
 public class Model {
     ArrayList<Polygon> list = new ArrayList<>();
 
-    private Polygon current = null;
+    Polygon current = null;
 
     public int size(){
         return list.size();

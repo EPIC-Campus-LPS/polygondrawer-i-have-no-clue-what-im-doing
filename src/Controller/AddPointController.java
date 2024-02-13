@@ -27,7 +27,7 @@ public class AddPointController {
         } else {
             selected.get().addPoint(p.x,p.y);
         }
-
+        UpdateMenu.updateMenu(app, model);
         app.repaint();
     }
 }
