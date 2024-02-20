@@ -3,10 +3,12 @@ package View;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
+import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 import Controller.AddPointController;
+import Controller.UndoController;
 import Model.Model;
 
 /**
@@ -63,13 +65,19 @@ public class Application extends JFrame {
         menuItem_Undo.setAccelerator(KeyStroke.getKeyStroke("Control Z"));
         menu_Edit.add(menuItem_Undo);
 
+        public void actionPerformed(ActionEvent e){
+            new UndoController(Application.this, model).removeLastPoint();
+        }
+
         //sets up the content pane and it uses PolygonDrawer
         contentPane = new PolygonDrawer(model);
+
         contentPane.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent e){
                 new AddPointController(Application.this,model).addPoint(e.getPoint());
             }
         });
+
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
         contentPane.setLayout(new BorderLayout(0, 0));
         setContentPane(contentPane);
