@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f778e718-9c75-4e06-8fae-8f232972fb42" name="Changes" comment="&quot;finished&quot; part 2">
-      <change afterPath="$PROJECT_DIR$/src/Controller/UndoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f778e718-9c75-4e06-8fae-8f232972fb42" name="Changes" comment="attempted to start part 3 but cameron is being a baby">
+      <change afterPath="$PROJECT_DIR$/src/Controller/QuitController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/ResetController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/UndoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UndoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Application.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Application.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Application.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +47,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "101",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "187",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "454",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Users/cardinn454_lpsk12/IdeaProjects",
     "project.structure.last.edited": "Project",
@@ -98,12 +102,21 @@
       <option name="project" value="LOCAL" />
       <updated>1707503045447</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="attempted to start part 3 but cameron is being a baby">
+      <option name="closed" value="true" />
+      <created>1708452727685</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708452727686</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Finished part 1 of the project" />
     <MESSAGE value="Added Javadocs?" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Javadocs?" />
+    <MESSAGE value="attempted to start part 3 but cameron is being a baby" />
+    <option name="LAST_COMMIT_MESSAGE" value="attempted to start part 3 but cameron is being a baby" />
   </component>
 </project>

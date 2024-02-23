@@ -4,10 +4,13 @@ import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 import Controller.AddPointController;
+import Controller.CompletePolygonController;
+import Controller.ResetController;
 import Controller.UndoController;
 import Model.Model;
 
@@ -44,7 +47,7 @@ public class Application extends JFrame {
         //creates the Frame in which we are going to make the polygon, Sets size, and name
 
         setTitle("Polygon Drawing Application");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         setBounds(100, 100, 450, 300);
 
         //we generate all the menus here
@@ -54,27 +57,46 @@ public class Application extends JFrame {
         menu_Polygon = new JMenu("Polygon");
         menuBar.add(menu_Polygon);
 
+        //reset controllers
+
         menuItem_Reset = new JMenuItem("Reset");
         menuItem_Reset.setAccelerator(KeyStroke.getKeyStroke("Control N"));
         menu_Polygon.add(menuItem_Reset);
+        menuItem_Reset.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new ResetController(Application.this, model).reset();
+            }
+        });
 
         menu_Edit = new JMenu("Edit");
         menuBar.add(menu_Edit);
 
+        //undo controllers
+
         menuItem_Undo = new JMenuItem("Undo");
         menuItem_Undo.setAccelerator(KeyStroke.getKeyStroke("Control Z"));
         menu_Edit.add(menuItem_Undo);
+        menuItem_Undo.addActionListener(new ActionListener() {
 
-        public void actionPerformed(ActionEvent e){
-            new UndoController(Application.this, model).removeLastPoint();
-        }
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new UndoController(Application.this, model).removeLastPoint();
+            }
+        });
 
-        //sets up the content pane and it uses PolygonDrawer
         contentPane = new PolygonDrawer(model);
 
+        /** Register controller to react to mouse events on PolygonDrawer. */
         contentPane.addMouseListener(new MouseAdapter() {
-            public void mouseClicked(MouseEvent e){
-                new AddPointController(Application.this,model).addPoint(e.getPoint());
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                // on right-mouse click
+                if (SwingUtilities.isRightMouseButton(e)) {
+                    new CompletePolygonController(Application.this, model).complete();
+                } else {
+                    new AddPointController(Application.this, model).addPoint(e.getPoint());
+                }
             }
         });
 
